@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- link for the stylesheet -->
+    <link rel="stylesheet" href="/css/stylesheet.css" />
+
+    <!-- link of the CDN for logos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- link for the fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Posters</title>
+  </head>
+  <body>
+    <header>
+      <!-- navigation bar -->
+      <div class="navbar">
+        <div class="logo"></div>
+        <div class="nav-elements">
+          <div class="nav-buttons">
+            <a href="index.html"><p>Home</p></a>
+            <p>Order</p>
+            <p>Posters</p>
+            <p>Categories</p>
+          </div>
+          <div class="nav-search">
+            <input placeholder="Search" />
+            <button class="search-nav-button">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+          <div class="nav-cart">
+            <a href="cart.html"
+              ><i class="fa-solid fa-cart-shopping"></i
+              ><span id="cart-count">0</span></a
+            >
+          </div>
+          <div class="nav-profile-logo">
+            <a href="account.html"><i class="fa-regular fa-user"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navbar part for ad -->
+      <div class="ad">
+        FREE SHIPPING & QUICK DISPATCH OF ALL ORDERS WITHIN 48 HRS
+      </div>
+    </header>
+
+    <main>
+      <!-- Swipable Images  -->
+      <div class="slider-container">
+        <div class="slider">
+          <div class="slide"><img src="images/cover1.jpg" alt="Slide 1" /></div>
+          <div class="slide"><img src="images/cover2.jpg" alt="Slide 2" /></div>
+        </div>
+      </div>
+
+      <!-- Tiles part for particular poster Categories -->
+      <div class="category-box1">
+        <div class="cbox">
+          <div id="cbox1"></div>
+          <a>Top 100 designs</a>
+        </div>
+        <div class="cbox">
+          <div id="cbox2"></div>
+          <a>Trending</a>
+        </div>
+        <div class="cbox">
+          <div id="cbox3"></div>
+          <a>Custom Prints</a>
+        </div>
+      </div>
+
+      <!-- our collection div -->
+      <div class="ourCollectionDiv">
+        <p>Our Collections</p>
+        <div class="animated-tiles">
+          <div class="ani-tile-1">
+            <div class="ani-tile-1-name"><img src="images/marvel.png" /></div>
+            <div class="ani-tile-1-img"></div>
+          </div>
+          <div class="ani-tile-2">
+            <div class="ani-tile-2-name">
+              <img src="images/dc-logo.png" />
+            </div>
+            <div class="ani-tile-2-img"></div>
+          </div>
+          <div class="ani-tile-3">
+            <div class="ani-tile-3-name">
+              <img src="images/anime-logo.jpeg" />
+            </div>
+            <div class="ani-tile-3-img"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- posters tiles -->
+      <div class="poster-tiles">
+        <!--title for the each block of posters -->
+        <p>Our Originals</p>
+        <!--this is for whole block which will have the photos of posters -->
+        <div class="tiles-content">
+          <!-- 1 -->
+          <div class="poster-tile-block">
+            <div class="poster-tiles-content">
+              <div class="poster-tiles-content-img">
+                <img src="posters/poster1.webp" />
+              </div>
+              <div class="poster-tiles-content-details">
+                <h3>Stranger things</h3>
+                <p>$20.00</p>
+                <div class="add-to-cart-container">
+                  <button class="add-to-cart-btn">Add to Cart</button>
+                  <div class="quantity-control" style="display: none">
+                    <button class="quantity-btn minus">-</button>
+                    <span class="product-quantity">1</span>
+                    <button class="quantity-btn plus">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="poster-tiles-content">
+              <div class="poster-tiles-content-img">
+                <img src="posters/GPE5461-the-boys.jpg" />
+              </div>
+              <div class="poster-tiles-content-details">
+                <h3>The Boys Series</h3>
+                <p>$15.00</p>
+                <div class="add-to-cart-container">
+                  <button class="add-to-cart-btn">Add to Cart</button>
+                  <div class="quantity-control" style="display: none">
+                    <button class="quantity-btn minus">-</button>
+                    <span class="product-quantity">1</span>
+                    <button class="quantity-btn plus">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="poster-tiles-content">
+              <div class="poster-tiles-content-img">
+                <img src="posters/moneyHeist.jpg" />
+              </div>
+              <div class="poster-tiles-content-details">
+                <h3>Money Heist</h3>
+                <p>$17.20</p>
+                <div class="add-to-cart-container">
+                  <button class="add-to-cart-btn">Add to Cart</button>
+                  <div class="quantity-control" style="display: none">
+                    <button class="quantity-btn minus">-</button>
+                    <span class="product-quantity">1</span>
+                    <button class="quantity-btn plus">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="poster-tiles-content">
+              <div class="poster-tiles-content-img">
+                <img src="posters/BreakingBad.jpg" />
+              </div>
+              <div class="poster-tiles-content-details">
+                <h3>Breaking Bad</h3>
+                <p>$17.20</p>
+                <div class="add-to-cart-container">
+                  <button class="add-to-cart-btn">Add to Cart</button>
+                  <div class="quantity-control" style="display: none">
+                    <button class="quantity-btn minus">-</button>
+                    <span class="product-quantity">1</span>
+                    <button class="quantity-btn plus">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="poster-tile-block">
+            <!-- 5 -->
+            <div class="poster-tiles-content">
+              <div class="poster-tiles-content-img">
+                <img src="posters/dcCOmics.jpg" />
+              </div>
+              <div class="poster-tiles-content-details">
+                <h3>DC Comics- Rebirth Poster</h3>
+                <p>$17.20</p>
+                <div class="add-to-cart-container">
+                  <button class="add-to-cart-btn">Add to Cart</button>
+                  <div class="quantity-control" style="display: none">
+                    <button class="quantity-btn minus">-</button>
+                    <span class="product-quantity">1</span>
+                    <button class="quantity-btn plus">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="poster-tiles-content">
+              <div class="poster-tiles-content-img">
+                <img src="posters/Joker.jpg" />
+              </div>
+              <div class="poster-tiles-content-details">
+                <h3>Joker Poster</h3>
+                <p>$17.20</p>
+                <div class="add-to-cart-container">
+                  <button class="add-to-cart-btn">Add to Cart</button>
+                  <div class="quantity-control" style="display: none">
+                    <button class="quantity-btn minus">-</button>
+                    <span class="product-quantity">1</span>
+                    <button class="quantity-btn plus">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="poster-tiles-content">
+              <div class="poster-tiles-content-img">
+                <img src="posters/justiceLeague.webp" />
+              </div>
+              <div class="poster-tiles-content-details">
+                <h3>Justice League</h3>
+                <p>$17.20</p>
+                <div class="add-to-cart-container">
+                  <button class="add-to-cart-btn">Add to Cart</button>
+                  <div class="quantity-control" style="display: none">
+                    <button class="quantity-btn minus">-</button>
+                    <span class="product-quantity">1</span>
+                    <button class="quantity-btn plus">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 8 -->
+            <div class="poster-tiles-content">
+              <div class="poster-tiles-content-img">
+                <img src="posters/batman.jpg" />
+              </div>
+              <div class="poster-tiles-content-details">
+                <h3>The Batman Poster</h3>
+                <p>$17.20</p>
+                <div class="add-to-cart-container">
+                  <button class="add-to-cart-btn">Add to Cart</button>
+                  <div class="quantity-control" style="display: none">
+                    <button class="quantity-btn minus">-</button>
+                    <span class="product-quantity">1</span>
+                    <button class="quantity-btn plus">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="poster-tile-block">
+            <!-- 9 -->
+            <div class="poster-tiles-content">
+              <div class="poster-tiles-content-img">
+                <img src="posters/marvel.jpg" />
+              </div>
+              <div class="poster-tiles-content-details">
+                <h3>Avengers Infinity War</h3>
+                <p>$17.20</p>
+                <div class="add-to-cart-container">
+                  <button class="add-to-cart-btn">Add to Cart</button>
+                  <div class="quantity-control" style="display: none">
+                    <button class="quantity-btn minus">-</button>
+                    <span class="product-quantity">1</span>
+                    <button class="quantity-btn plus">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 10 -->
+            <div class="poster-tiles-content">
+              <div class="poster-tiles-content-img">
+                <img src="posters/ironman.webp" />
+              </div>
+              <div class="poster-tiles-content-details">
+                <h3>Iron Man</h3>
+                <p>$17.20</p>
+                <div class="add-to-cart-container">
+                  <button class="add-to-cart-btn">Add to Cart</button>
+                  <div class="quantity-control" style="display: none">
+                    <button class="quantity-btn minus">-</button>
+                    <span class="product-quantity">1</span>
+                    <button class="quantity-btn plus">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 11 -->
+            <div class="poster-tiles-content">
+              <div class="poster-tiles-content-img">
+                <img src="posters/doctor.jpg" />
+              </div>
+              <div class="poster-tiles-content-details">
+                <h3>Doctor Strange</h3>
+                <p>$17.20</p>
+                <div class="add-to-cart-container">
+                  <button class="add-to-cart-btn">Add to Cart</button>
+                  <div class="quantity-control" style="display: none">
+                    <button class="quantity-btn minus">-</button>
+                    <span class="product-quantity">1</span>
+                    <button class="quantity-btn plus">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 12 -->
+            <div class="poster-tiles-content">
+              <div class="poster-tiles-content-img">
+                <img src="posters/hulk.webp" />
+              </div>
+              <div class="poster-tiles-content-details">
+                <h3>Hulk Poster</h3>
+                <p>$17.20</p>
+                <div class="add-to-cart-container">
+                  <button class="add-to-cart-btn">Add to Cart</button>
+                  <div class="quantity-control" style="display: none">
+                    <button class="quantity-btn minus">-</button>
+                    <span class="product-quantity">1</span>
+                    <button class="quantity-btn plus">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="poster-tile-block">
+            <!-- 13 -->
+            <div class="poster-tiles-content">
+              <div class="poster-tiles-content-img">
+                <img src="posters/Naruto.jpg" />
+              </div>
+              <div class="poster-tiles-content-details">
+                <h3>Naruto Poster</h3>
+                <p>$17.20</p>
+                <div class="add-to-cart-container">
+                  <button class="add-to-cart-btn">Add to Cart</button>
+                  <div class="quantity-control" style="display: none">
+                    <button class="quantity-btn minus">-</button>
+                    <span class="product-quantity">1</span>
+                    <button class="quantity-btn plus">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 14 -->
+            <div class="poster-tiles-content">
+              <div class="poster-tiles-content-img">
+                <img src="posters/one piece.jpg" />
+              </div>
+              <div class="poster-tiles-content-details">
+                <h3>One Piece</h3>
+                <p>$17.20</p>
+                <div class="add-to-cart-container">
+                  <button class="add-to-cart-btn">Add to Cart</button>
+                  <div class="quantity-control" style="display: none">
+                    <button class="quantity-btn minus">-</button>
+                    <span class="product-quantity">1</span>
+                    <button class="quantity-btn plus">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 15 -->
+            <div class="poster-tiles-content">
+              <div class="poster-tiles-content-img">
+                <img src="posters/death note.jpg" />
+              </div>
+              <div class="poster-tiles-content-details">
+                <h3>Death note</h3>
+                <p>$17.20</p>
+                <div class="add-to-cart-container">
+                  <button class="add-to-cart-btn">Add to Cart</button>
+                  <div class="quantity-control" style="display: none">
+                    <button class="quantity-btn minus">-</button>
+                    <span class="product-quantity">1</span>
+                    <button class="quantity-btn plus">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 16 -->
+            <div class="poster-tiles-content">
+              <div class="poster-tiles-content-img">
+                <img src="posters/Naruto Anime.jpg"
+              </div>
+              <div class="poster-tiles-content-details">
+                <h3>Naruto</h3>
+                <p>$17.20</p>
+                <div class="add-to-cart-container">
+                  <button class="add-to-cart-btn">Add to Cart</button>
+                  <div class="quantity-control" style="display: none">
+                    <button class="quantity-btn minus">-</button>
+                    <span class="product-quantity">1</span>
+                    <button class="quantity-btn plus">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer of the website -->
+    <footer>
+      <div class="footer-block">
+        <!-- footer is divided in two divs 
+          One is for links and other is for the copyright statement -->
+
+        <!-- footer for links -->
+        <div class="footer-top">
+          <div class="footer-item" id="first">
+            <h5 class="footer-heading" id="vision">Vision</h5>
+            <span>Creativity, Expression, & Exploration</span>
+          </div>
+
+          <div class="footer-item" id="second">
+            <h5 class="footer-heading">Pages</h5>
+            <a><span class="footer-link">About us</span></a>
+            <a><span class="footer-link">Contact us</span></a>
+            <a><span class="footer-link">Terms and condition</span></a>
+            <a><span class="footer-link">Refunds/cancellation</span></a>
+            <a><span class="footer-link">FAQ</span></a>
+          </div>
+
+          <div class="footer-item" id="third">
+            <h5 class="footer-heading">My Account</h5>
+            <a><span class="footer-link">Log in</span></a>
+            <a><span class="footer-link">Register</span></a>
+            <a><span class="footer-link">Track Order</span></a>
+          </div>
+
+          <div class="footer-item" id="fourth">
+            <h5 class="footer-heading">Follow Us</h5>
+            <div class="social-link">
+              <i class="fa-brands fa-x-twitter"></i>
+              <a><span class="footer-link">Twitter</span></a>
+            </div>
+            <div class="social-link">
+              <i class="fa-brands fa-facebook"></i>
+              <a><span class="footer-link">Facebook</span></a>
+            </div>
+            <div class="social-link">
+              <i class="fa-brands fa-instagram"></i>
+              <a><span class="footer-link">Instagram</span></a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="copyright-bar" />
+
+        <!-- footer for copyright -->
+        <div class="footer-bottom">
+          <h3 class="Copyrights">
+            Copyrights <i class="fa-regular fa-copyright"></i> 2024
+          </h3>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/swipe.js"></script>
+    <script src="/js/cart.js"></script>
+    <script src="/js/addToCart.js"></script>
+  </body>
+</html>

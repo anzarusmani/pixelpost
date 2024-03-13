@@ -1,0 +1,622 @@
+* {
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: antiquewhite;
+}
+
+/* navigation bar */
+.navbar {
+    position: fixed; /* Set the navbar to be fixed */
+    top: 0; /* Align the navbar to the top of the viewport */
+    z-index: 1000; /*used for preventing other elements from overlaping the navbar*/
+    height: 80px;
+    width: 100%;
+    background-color: #415a77;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 0px 10px 40px;
+}
+.navbar a{
+    color: black;
+    text-decoration: none;
+}
+.logo {
+    background-image: url("/images/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 45%;
+    min-height: 50px; /* prevent collapse */
+}
+
+#cart-count{
+    border-radius: 50%;
+    background-color: rgb(154, 40, 40);
+    font-size: 0.7rem;
+    color: white;
+}
+
+.nav-elements {
+    display: flex;
+    margin-right: 60px;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 55%;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-buttons p {
+    margin-left: 20px;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid transparent; /* Add transparent border by default */
+    padding: 5px; /* Add padding for better visual */
+}
+
+.nav-buttons p:hover {
+    border-color: #1b263b; /* Change border color on hover */
+}
+
+.nav-search {
+    display: flex;
+    align-items: center;
+    height: 20px;
+}
+
+.nav-search input {
+    border-right: 0px;
+    font-family: 'Poppins', sans-serif;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 25px;
+}
+
+.search-nav-button {
+    text-align: center;
+    height: 25px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.nav-cart, .nav-profile-logo {
+    padding: 0px; /* Add padding for better visual */
+    border: 2px solid transparent; /* Add transparent border by default */
+}
+
+.nav-cart:hover, .nav-profile-logo:hover {
+    border-color: #1b263b; /* Change border color on hover */
+}
+
+/* Delivery in 48 hours */
+.ad{
+    background-color: #778da9;
+    height:30px;
+    text-align: center;
+    padding-top: 5px;
+    font-family: 'Anton', sans-serif;
+}
+
+/* Swipable Images */
+.slider-container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* category tiles */
+.category-box1{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+/* common class for all the boxes */
+.cbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:573.9px ;
+    width: 360.8px;
+    margin: 0px 20px 20px 20px;
+}
+
+.cbox a{
+    font-weight: 700;
+}
+
+/* ids for each box */
+#cbox1{
+    margin-bottom: 20px;
+    height: 330px;
+    background-image: url(/images/top-100.jpg);
+    background-size: cover;
+    align-self: stretch;
+}
+
+#cbox2{
+    margin-bottom: 20px;
+    background-image: url(/images/hot-trends.webp);
+    background-size: cover;
+    height: 495.9px;
+    align-self: stretch;    
+}
+
+#cbox3{
+    margin-bottom: 20px;
+    height: 330px;
+    background-image: url(/images/custom-prints.webp);
+    background-size: cover;
+    align-self: stretch;
+}
+
+/* our collection div */
+.ourCollectionDiv{
+    height: 500px;
+    background-color: #415a77;
+    margin-bottom: 50px;
+    padding: 30px 30px 0px 30px;
+}
+
+.ourCollectionDiv p{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.animated-tiles{
+    margin-top: 60px;
+    display:  flex;
+    justify-content: space-evenly;
+}
+
+.ani-tile-1{
+    position: relative;
+    width: 20%;
+    height: 300px; 
+    transition: transform 0.3s ease-in-out;   
+}
+
+.ani-tile-1:hover{
+    transform: translateY(-5px);
+}
+
+.ani-tile-1-name{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    border-radius: 10px;
+    margin-top: 40px;
+    display: flex;
+    align-items: end;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.ani-tile-1-name img{
+    position: absolute;
+    transform: rotate(90deg);
+    height: 15%;
+    width: auto;
+    top:105px;
+    left: -45px;
+}
+
+.ani-tile-1-img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 15px;
+    height: 240px;
+    width: 65%;
+    border-radius: 10px;
+    background-image: url("/images/marvel-cover.jpeg");
+    background-size: cover;
+}
+
+.ani-tile-2{
+    position: relative;
+    width: 20%;
+    height: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.ani-tile-2:hover{
+    transform: translateY(-5px);
+}
+
+.ani-tile-2-name{
+    position: absolute;
+    top: 0;
+    bottom: 0;    
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    border-radius: 10px;
+    margin-top: 40px;
+    display: flex;
+    align-items: end;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.ani-tile-2-name img{
+    position: absolute;
+    transform: rotate(90deg);
+    height: 35%;
+    width: auto;
+    top:85px;
+    left: -95px;
+}
+
+.ani-tile-2-img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 15px;
+    height: 240px;
+    width: 65%;
+    border-radius: 10px;
+    background-image: url("/images/dc-cover.jpeg");
+    background-size: cover;
+
+}
+
+.ani-tile-3{
+    position: relative;
+    width: 20%;
+    height: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.ani-tile-3:hover{
+    transform: translateY(-5px);
+}
+
+.ani-tile-3-name{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    border-radius: 10px;
+    margin-top: 40px;
+    display: flex;
+    align-items: end;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.ani-tile-3-name img{
+    position: absolute;
+    transform: rotate(90deg);
+    height: 30%;
+    width: auto;
+    top:85px;
+    left: -45px;
+}
+
+.ani-tile-3-img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 15px;
+    height: 240px;
+    width: 65%;
+    border-radius: 10px;
+    background-image: url("/images/anime-cover.jpeg");
+    background-size: cover;
+}
+
+/* poster tiles */
+.poster-tiles p{
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.tiles-content{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.poster-tile-block{
+    display: flex;
+    justify-content: space-around;
+}
+
+.poster-tiles-content{
+    height: 530px;
+    width: 300px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(161, 140, 140, 0.3);
+}
+
+.poster-tiles-content-img{
+    height: 80%;
+    width: 95%;
+    border-radius: 10px;
+    margin-top: 10px;
+    /* background-image: url("posters/poster1.webp");
+    background-size: cover; */
+    margin-left: 8px;
+}
+
+.poster-tiles-content-img img{
+    border-radius: 10px;
+}
+
+.poster-tiles-content-details{
+    height:20%;
+    width: 100%;
+}
+
+.poster-tiles-content-details {
+    text-align: center;
+}
+
+.poster-tiles-content-details h3 {
+    font-size: 20px;
+}
+
+.poster-tiles-content-details p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.add-to-cart-container {
+    width: 80px; /* Adjust width as needed */
+    margin: auto; /* Center horizontally */
+}
+
+.add-to-cart-btn{
+    border-radius: 10px;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.quantity-btn {
+    background-color: #ccc;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.product-quantity {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
+}
+
+/* .poster-tiles-content-details button {
+    background-color: #1b263b;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.poster-tiles-content-details button:hover {
+    background-color: #415a77;
+} */
+
+/* Footer design */
+.footer-block{
+    height: 345px;
+    background-color: #415a77;
+    padding-left: 60px;
+    padding-right: 60px;
+    position: relative;
+}
+
+.footer-top{
+    display: flex;
+    justify-content: space-evenly;
+    height: 200px;
+    margin-bottom: 90px;
+}
+
+.footer-item{
+    height: 154.85px;
+    width: 231.9px;
+    display: grid;
+    row-gap: 10px;
+}
+
+.footer-item span{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-item h5{
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-heading{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-bottom{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+/* adjusting the hr to divide the links and the copyright thing */
+.copyright-bar{
+    border: 1px solid #60799b;
+}
+
+/* changing font for the copyright text */
+.Copyrights{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Shopping carts styling */
+.cart-page{
+    margin: 80px 300px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: #60799b;
+    font-weight: normal;
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: #ff523b;
+    font-size: 12px;
+}
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+.total-price table{
+    border-top: 3px solid #60799b;
+    width: 100%;
+    max-width: 400px;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+
+/* Account page styling */
+.account-page{
+    padding: 50px 0;
+    background: antiquewhite;
+}
+.form-container{
+    background: #fff;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: 15px auto;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.form-container span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+.form-btn{
+    display: inline-block;
+}
+.form-container form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+}
+form input{
+    width: 260px;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+form .btn{
+    background-color: #ff523b;
+    color: #fff;
+    width: 100%;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+form .btn :focus{
+    outline: none;
+}
+form a{
+    font-size: 12px;
+}
+#LoginForm{
+    left: 0px;
+}
+#RegForm{
+    left: 300px;
+}
+#Indicator{
+    width: 100px;
+    border: none;
+    background: #ff523b ;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(0px);
+    transition: transform 1s;
+}
