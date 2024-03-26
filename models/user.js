@@ -6,6 +6,6 @@ const pixelPostSchema = new mongoose.Schema({
   password: String,
 });
 
-const PixelPost = mongoose.model("PixelPost", pixelPostSchema);
+const PixelPost = mongoose.model("PixelPost", pixelPostSchema, "pixelpost");
 
 module.exports = PixelPost;
